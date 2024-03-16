@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resume </title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/util.css">
+    <script src="js/style.js"></script>
+
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header>
+        <nav>
+            <div class="logo"><img src="images/Capture.png" alt="" height="80vh" width="80vh"></div>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search"><input type="text" name="" id="" placeholder="Search">
+                <button class="btn">Search</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="slider">
+                <img src="project1.PNG" alt="image1">
+                <img src="project2.PNG" alt="image2">
+                <img src="project3.PNG" alt="image3">
+                <img src="project4.PNG" alt="image4">
+                <img src="project5.PNG" alt="image5">
+
+
+            </div>
+
+        </div>
+
+    </main>
+    <div class="table">
+        <table>
+            <tr>
+                <td><a href="https://www.nseindia.com/">1 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Recusandae, officiis! </a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.bseindia.com/">2 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Cumque, assumenda! </a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.nasdaq.com/">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                        eaque.</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.londonstockexchange.com/">4 Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Unde, laudantium.</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.bolsasymercados.es/bme-exchange/en/Madrid-Stock-Exchange">5 Lorem ipsum dolor
+                        sit, amet consectetur adipisicing elit. Quisquam, delectus.</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.boerse-frankfurt.de/en">6 Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Blanditiis, similique?</a></td>
+            </tr>
+
+        </table>
+        
+    </div>
+    <div class="user">
+        <table cellpadding="50px">
+            <tr><td><div class="username"><input type="text" name="" id="" placeholder="Username"></td></div></tr>
+            <tr><td><div class="password"><input type="text" name="" id="" placeholder="Password"></td></div></tr>
+            
+        </table>
+    </div>
+    <footer class="flex-all-center">
+        <p> all rights are reserved to this site</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var images = document.querySelectorAll('.slider img');
+            var currentImage = 0;
+
+            function showImage(index) {
+                images.forEach(function (image) {
+                    image.style.opacity = 0;
+                });
+                images[index].style.opacity = 1;
+            }
+
+            function nextImage() {
+                currentImage = (currentImage + 1) % images.length;
+                showImage(currentImage);
+            }
+
+            setInterval(nextImage, 5000);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+.flex-all-center {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.progress {
+    background-color: red;
+    height: 2px;
+    animation: load 2s ease-in-out 1s 1;
+
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 60vw;
+    }
+
+    100% {
+        width: 100vw;
+    }
+}
+
+.table {
+    display: flex;
+    width: 650px;
+    height: 100vh;
+    border: 2px solid black;
+    margin-left: 850px;
+    margin-top: -600px;
+    margin-bottom: 120px;
+    border-radius: 12px;
+}
+
+.user {
+    display: flex;
+    width: 650px;
+    height: 40vh;
+    border: 2px solid black;
+    margin-top: -330px;
+    margin-left: 78px;
+    margin-bottom: 180px;
+    border-radius: 10px;
+}
+
+.username input {
+    height: 30px;
+    width: 200px;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+
+}
+
+.password input {
+    height: 30px;
+    width: 200px;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+
+}
